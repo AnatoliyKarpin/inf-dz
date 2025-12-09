@@ -10,7 +10,6 @@ public class Post {
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
-    // Конструктор для создания
     public Post(String title, int price, String author, String message) {
         this.title = title;
         this.price = price;
@@ -20,10 +19,8 @@ public class Post {
         this.updatedAt = LocalDateTime.now();
     }
 
-    // Конструктор пустой
     public Post() {}
 
-    // Геттеры и сеттеры
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 
